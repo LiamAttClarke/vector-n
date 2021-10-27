@@ -1,0 +1,38 @@
+{
+  "name": "vector-n",
+  "version": "1.0.0",
+  "description": "Simple vector classes written in Typescript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/chai-roughly": "^1.0.1",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.6",
+    "chai": "^4.3.4",
+    "chai-roughly": "^1.0.0",
+    "mocha": "^9.1.3",
+    "ts-mocha": "^8.0.0",
+    "typedoc": "^0.22.7",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "test": "ts-mocha -p tsconfig.json tests/*.spec.ts --recursive",
+    "build": "tsc",
+    "docs": "typedoc ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiamAttClarke/vector-n.git"
+  },
+  "author": {
+    "name": "Liam A. Clarke",
+    "email": "liam.att.clarke@gmail.com",
+    "url": "https://atticus.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LiamAttClarke/vector-n/issues"
+  },
+  "homepage": "https://github.com/LiamAttClarke/vector-n#readme"
+}
