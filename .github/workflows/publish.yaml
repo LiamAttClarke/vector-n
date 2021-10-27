@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     name: Test
-    uses: actions/test
+    uses: ./.github/actions/test@main
 
   publish:
     name: Publish to NPM Registry
