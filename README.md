@@ -4,7 +4,12 @@ Simple vector classes written in Typescript.
 
 [Documentation](https://atticus.dev/vector-n/docs)
 
-Example:
+## Installation
+```
+npm install --save @icus/vector-n
+```
+
+## Example:
 ```
 import { Vector2 } from "vector-n";
 
@@ -15,5 +20,5 @@ v1.normalize()
   .rotateDeg(45);
 ```
 
-### TODOs
+## TODOs
 - Add Vector3 class
