@@ -1,0 +1,24 @@
+name: Publish
+
+on:
+  release:
+    types:
+    - published
+
+jobs:
+  test:
+    name: Test
+    uses: ./.github/actions/test
+
+  publish:
+    name: Publish to NPM Registry
+    steps:
+    - name: Checkout
+      uses: action/checkout@v2
+    - name: Publish
+      uses: JS-DevTools/npm-publish@v1
+      with:
+        token: ${{ secrets.NPM_TOKEN }}
+        dry-run: true
+
+
