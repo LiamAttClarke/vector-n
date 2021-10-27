@@ -2,7 +2,7 @@
 
 Simple vector classes written in Typescript.
 
-[Documentation](docs/index.html)
+[Documentation](https://atticus.dev/vector-n/docs)
 
 Example:
 ```
