@@ -1,5 +1,5 @@
 {
-  "name": "@icus/vector-n",
+  "name": "@liamattclarke/vector-n",
   "version": "1.0.0",
   "description": "Simple vector classes written in Typescript",
   "main": "dist/index.js",

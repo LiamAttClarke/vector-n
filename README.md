@@ -6,7 +6,7 @@ Simple vector classes written in Typescript.
 
 ## Installation
 ```
-npm install --save @icus/vector-n
+npm install --save @liamattclarke/vector-n
 ```
 
 ## Example:
