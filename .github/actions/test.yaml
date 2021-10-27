@@ -3,8 +3,6 @@ description: Run tests
 runs:
   using: composite
   steps:
-  - name: Checkout
-    uses: action/checkout@v2
   - name: Install
     run: npm install
   - name: Run Tests
