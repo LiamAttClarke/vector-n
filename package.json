@@ -12,14 +12,23 @@
     "chai": "^4.3.4",
     "chai-roughly": "^1.0.0",
     "mocha": "^9.1.3",
+    "np": "^7.5.0",
     "ts-mocha": "^8.0.0",
     "typedoc": "^0.22.7",
     "typescript": "^4.4.4"
   },
+  "files": [
+    "src/**/*",
+    "dist/**/*",
+    "README.md",
+    "LICENSE.md"
+  ],
   "scripts": {
     "test": "ts-mocha -p tsconfig.json tests/*.spec.ts --recursive",
-    "build": "tsc",
-    "docs": "typedoc ./src/index.ts"
+    "build": "npm run build:src && npm run build:docs",
+    "build:src": "tsc",
+    "build:docs": "typedoc ./src/index.ts",
+    "publish": "np"
   },
   "repository": {
     "type": "git",
